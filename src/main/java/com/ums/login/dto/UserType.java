@@ -1,4 +1,4 @@
-package com.ums.login.LoginService.dto;
+package com.ums.login.dto;
 
 public enum UserType {
     STUDENT,

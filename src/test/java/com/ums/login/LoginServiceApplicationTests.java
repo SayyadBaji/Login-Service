@@ -1,4 +1,4 @@
-package com.ums.login.LoginService;
+package com.ums.login;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

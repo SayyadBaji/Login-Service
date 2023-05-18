@@ -1,4 +1,4 @@
-package com.ums.login.LoginService.dto;
+package com.ums.login.dto;
 
 import lombok.Data;
 
@@ -6,5 +6,5 @@ import lombok.Data;
 public class User {
     private String username;
     private String password;
-    private String userType;
+    private String usertype;
 }

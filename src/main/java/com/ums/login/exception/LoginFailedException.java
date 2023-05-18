@@ -1,4 +1,4 @@
-package com.ums.login.LoginService.exception;
+package com.ums.login.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

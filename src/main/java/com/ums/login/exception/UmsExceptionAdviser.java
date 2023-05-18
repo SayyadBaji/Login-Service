@@ -1,4 +1,4 @@
-package com.ums.login.LoginService.exception;
+package com.ums.login.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +10,11 @@ public class UmsExceptionAdviser {
 
     @ExceptionHandler(value = LoginFailedException.class)
     public ResponseEntity<String> handleLoginFailure(LoginFailedException ex) {
-        return new ResponseEntity<>("Invalid Credentails", HttpStatus.FORBIDDEN);
+        return new ResponseEntity<>(ex.getErrorMessage(), HttpStatus.FORBIDDEN);
+    }
+
+    @ExceptionHandler(value = NoUserFoundException.class)
+    public ResponseEntity<String> handleNoUserFound(NoUserFoundException ex) {
+        return new ResponseEntity<>(ex.getErrorMessage(), HttpStatus.NOT_FOUND);
     }
 }
